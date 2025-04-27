@@ -31,13 +31,19 @@
 
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Create a password">
+                <div class="pw-wrapper">
+                    <input type="password" id="password" placeholder="Create a password">
+                    <span class="toggle" onclick="togglePassword('password')">👁‍🗨</span>
+                </div>
                 <small>Error message</small>
             </div>
 
             <div class="form-group">
                 <label for="confirmPassword">Confirm Password</label>
-                <input type="password" id="confirmPassword" placeholder="Re-enter your password">
+                <div class="pw-wrapper">
+                    <input type="password" id="confirmPassword" placeholder="Re-Enter your password">
+                    <span class="toggle" onclick="togglePassword('confirmPassword')">👁‍🗨</span>
+                </div>
                 <small>Error message</small>
             </div>            
 
