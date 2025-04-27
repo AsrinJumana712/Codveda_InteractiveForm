@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #fc2598);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  background: #f9f9f9;
+  font-size: 15px;
+}
+
+.form-group input:focus {
+  border-color: #6a11cb;
+  background: #fff;
+}
+
+.form-group.success input {
+  border-color: #28a745;
+  background: #eafaf1;
+}
+
+.form-group.error input {
+  border-color: #dc3545;
+  background: #ffe6e6;
+}
+
+.form-group small {
+  color: #dc3545;
+  visibility: hidden;
+  position: absolute;
+  bottom: -18px;
+  left: 5px;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.form-group.error small {
+  visibility: visible;
+  opacity: 1;
+}
+
+.pw-wrapper {
+  position: relative;
+}
+
+.pw-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  user-select: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #6a11cb, #fc2598);
+  border: none;
+  color: white;
+  font-size: 17px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.4s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: linear-gradient(to right, #fc2598, #6a11cb);
+}
+
+.success-message {
+  text-align: center;
+  color: #28a745;
+  margin-top: 15px;
+  font-size: 16px;
+}
