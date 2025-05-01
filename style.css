@@ -7,7 +7,7 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(to right, #6a11cb, #fc2598);
+  background: linear-gradient(to right, #d9afd9, #97d9e1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@ body {
 }
 
 .form-container {
-  background: #fff;
+  background: #fffafc;
   padding: 30px 40px;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -66,7 +66,7 @@ h2 {
 }
 
 .form-group input:focus {
-  border-color: #6a11cb;
+  border-color: #d9afd9;
   background: #fff;
 }
 
@@ -119,7 +119,7 @@ h2 {
 button {
   width: 100%;
   padding: 12px;
-  background: linear-gradient(to right, #6a11cb, #fc2598);
+  background: #9d50bb;
   border: none;
   color: white;
   font-size: 17px;
@@ -131,7 +131,7 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(to right, #fc2598, #6a11cb);
+  background: linear-gradient(to right, #9d50bb, #6e48aa);
 }
 
 .success-message {
